@@ -35,7 +35,15 @@ Cleanup
 - Simple built-in browser UI
 - Separate download directories by platform
 
-The resource limits are defined directly in `app.py`. fileciteturn78file0
+## API
+
+The primary endpoint is:
+
+```http
+GET /download?url=<media-url>
+```
+
+The browser UI uses the same backend endpoint. The exact supported URL behavior depends on the installed `yt-dlp` extractor.
 
 ## Tech stack
 
